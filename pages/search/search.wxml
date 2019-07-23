@@ -1,0 +1,30 @@
+<!--pages/ceshi/ceshi.wxml-->
+    <!--input.wxml-->
+<view>
+  <view class="v1">
+     <view></view>
+     <view>
+        <input placeholder = "搜索"  maxlength="15" bindinput="confirm"></input>
+     </view>
+     <view></view>
+  </view>
+<!--搜索之后显示-->
+<block1 wx:if='{{isResult==1}}'>
+ <view2 wx:for='{{searchResult}}' >
+  <view class="v3" bindtap = 'openPlay' data-id='{{index}}'>
+     <image src = "{{item.pic}}"></image>
+     <view>
+       <text>{{item.name}}</text>
+       <text>{{item.singer}}</text>
+     </view>
+     <text2>{{item.time}}</text2>
+   </view>
+  </view2>
+</block1>
+
+<block2 wx:if='{{isResult==2}}'>
+  <text>未找到相应歌曲</text>
+</block2>
+
+
+</view>

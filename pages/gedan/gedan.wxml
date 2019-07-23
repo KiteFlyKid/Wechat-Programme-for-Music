@@ -1,0 +1,63 @@
+<view class="v1">
+    <text>
+      <text>歌单</text>
+      <text>{{description}}</text>
+    </text>
+    <view></view>
+    <view>
+      <image src = "../../images/search7.png" bindtap = 'openPlay1'></image>
+    </view>
+</view>
+
+<view class="v2"> 
+  <text>{{listname}}</text>
+  <view>
+    <image src = "{{pic}}"></image>
+  </view>
+</view>
+
+<view class="controller">
+  <image src="../../images/share7.png"></image>
+  <image src="../../images/stop7.png" bindtap = 'openPlay' data-id='0'></image>
+  <image src="../../images/Arrow Left7.png" bindtap="load"></image>
+</view>
+
+<loading hidden="{{  loadingHidden }}">
+  下载中...
+</loading>
+  
+<view class="peizi">
+  <text>分享</text>
+  <text bindtap = 'openPlay' data-id='0'>播放</text>
+  <text bindtap="load">下载</text>
+</view>
+
+
+<!--播放列表-->
+<view class="bofang">
+   <view class="titleWrap">
+      <text class="popular">热门评论</text>
+      <view2>
+         <text class="add">添加收藏</text>
+      </view2>
+   </view>
+   <view class="neirong">
+      <movable-area>
+         <movable-view direction="vertical" inertia="true" friction='20'>
+           <view2 wx:for='{{songList}}'>
+           <view class="blank"></view>
+           <view class="v3" >
+              <view4>
+                 <text1>{{index+1}}</text1>
+              </view4>
+              <view3>
+                 <text>{{item.name}}</text>
+                 <text>{{item.singer}}</text>
+              </view3>
+              <image src="../../images/stop27.png" bindtap = 'openPlay' data-id='{{index}}'></image>
+           </view>
+           </view2>
+         </movable-view>
+      </movable-area>
+   </view>
+</view>

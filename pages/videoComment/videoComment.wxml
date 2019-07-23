@@ -1,0 +1,64 @@
+<!-- 视频及信息 -->
+
+
+
+
+<view class="topC">
+  <view>
+    <text></text>
+    <text>MV评论({{commentData.total}})</text>
+
+  </view>
+</view>
+
+
+
+<view class="top_2">
+  <text>热门评论</text>
+</view>
+
+<view class="hotComments">
+  <view wx:for="{{commentData.hotComments}}">
+    <view class="infoC">
+      <image src="{{item.user.avatarUrl}}"></image>
+      <text>{{item.user.nickname}}</text>
+
+      <text>{{item.likedCount}}</text>
+      <image src="../../images/xg.png"></image>
+    </view>
+    <view class="content">
+      <text>{{item.content}}</text>
+      <view>
+        <image src="../../images/xr.png"></image>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+
+<view class="top_3">
+  <text>全部评论</text>
+</view>
+
+
+<view class="comments">
+  <view wx:for="{{commentData.comments}}">
+    <view class="infoC">
+      <image src="{{item.user.avatarUrl}}"></image>
+      <text>{{item.user.nickname}}</text>
+
+
+      <text>{{item.likedCount}}</text>
+      <image src="../../images/xg.png"></image>
+
+    </view>
+    <view class="content">
+      <text>{{item.content}}</text>
+      <view>
+        <image src="../../images/xr.png"></image>
+      </view>
+    </view>
+  </view>
+</view>

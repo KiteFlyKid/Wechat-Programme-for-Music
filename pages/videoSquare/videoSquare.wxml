@@ -1,0 +1,201 @@
+<view class="services_container">
+  <!-- 顶部导航 -->
+  <movable-area>
+    <movable-view class="top" direction="horizontal" inertia="true">
+
+      <block wx:for="{{['推荐','Take It From Me','音乐画像','现场']}}">
+        <view bindtap='onTabsItemTap' data-index='{{index}}' class="top-item">
+          <text class="{{currentTabsIndex==index?'on':''}}">{{item}}</text>
+        </view>
+      </block>
+    </movable-view>
+  </movable-area>
+  <!-- 循环单元 -->
+  <view class='box'>
+    <view class='video' hidden="{{currentTabsIndex!=0}}">
+      <!-- 开始循环 -->
+      <block wx:for="{{videoList}}">
+        <view class='video-item' wx:if="{{index<10}}">
+          <view class='wrapper'>
+            <!-- 视频 -->
+            <video class='video-video' wx:if='{{index==videoIndex}}' id='video{{index}}' autoplay='{{true}}' show-center-play-btn="{{true}}" src='https://v1.itooi.cn/netease/mvUrl?id={{item.id}}&quality=1080'></video>
+            <!-- cover海报 -->
+            <image class='videocover' wx:if='{{index!=videoIndex}}' mode='aspectFill' src='{{item.cover}}'></image>
+            <!-- 播放按钮 -->
+            <image class='videoPlay' wx:if='{{index!=videoIndex}}' data-index='{{index}}' bindtap='videoPlay' src='/images/play.png'></image>
+            <!-- MV信息以及导航播放界面 -->
+          </view>
+          <navigator url='../videoPlay/videoPlay?&mid={{item.id}}'>
+            <view class='video-name'>{{item.name}}</view>
+            <view class='video-desc' style="{{item.upStatus?'':'display:-webkit-box'}}">{{item.alias}} </view>
+            <view class='video-desc' style="{{item.upStatus?'':'display:-webkit-box'}}">{{item.briefDesc}} </view>
+          </navigator>
+          <!-- 底部信息-->
+          <view class='video-btn'>
+            <view class="words">
+              <text>{{item.artistName}}</text>
+            </view>
+            <image class="related" src="https://v1.itooi.cn/netease/pic?id={{37239001+index}}"></image>
+            <view class="good-view" data-index="{{index}}" bindtap='nice'>
+              <image class='good' hidden='{{item.upStatus}}' src="../../images/xg.png"></image>
+              <image class='good' hidden='{{!item.upStatus}}' src="../../images/xi.png"></image>
+              <view class="goodCount">
+                <text>{{item.score}}</text>
+              </view>
+            </view>
+            <navigator url='../videoComment/videoComment?&mid={{item.id}}'>
+            <image bindtap="change" class="comment" src="../../images/conment.png"></image>
+            </navigator>
+            <image class="share" src="../../images/share.png"></image>
+          </view>
+
+        </view>
+
+      </block>
+    </view>
+
+
+
+
+
+    <!-- Take it From me -->
+    <view class='video' hidden="{{currentTabsIndex!=1}}">
+      <!-- 开始循环 -->
+      <block wx:for="{{videoList}}">
+        <view class='video-item' wx:if="{{index<20&&index>=10}}">
+          <view class='wrapper'>
+            <!-- 视频 -->
+            <video class='video-video' wx:if='{{index==videoIndex}}' id='video{{index}}' autoplay='{{true}}' show-center-play-btn="{{false}}" src='https://v1.itooi.cn/netease/mvUrl?id={{item.id}}&quality=1080'></video>
+            <!-- cover海报 -->
+            <image class='videocover' wx:if='{{index!=videoIndex}}' mode='aspectFill' src='{{item.cover}}'></image>
+            <!-- 播放按钮 -->
+            <image class='videoPlay' wx:if='{{index!=videoIndex}}' data-index='{{index}}' bindtap='videoPlay' src='/images/play.png'></image>
+
+          </view>
+          <navigator url='../videoPlay/videoPlay?&mid={{item.id}}'>
+            <view class='video-name'>{{item.name}}</view>
+            <view class='video-desc' style="{{item.upStatus?'':'display:-webkit-box'}}">{{item.alias}} </view>
+            <view class='video-desc' style="{{item.upStatus?'':'display:-webkit-box'}}">{{item.briefDesc}} </view>
+
+          </navigator>
+          <!-- 底部 -->
+          <!-- 展开信息 -->
+
+          <view class='video-btn'>
+
+            <view class="words">
+              <text>{{item.artistName}}</text>
+            </view>
+            <image class="related" src="https://v1.itooi.cn/netease/pic?id={{37239001+index}}"></image>
+            <view class="good-view" data-index="{{index}}" bindtap='nice'>
+              <image class='good' hidden='{{item.upStatus}}' src="../../images/xg.png"></image>
+              <image class='good' hidden='{{!item.upStatus}}' src="../../images/xi.png"></image>
+              <view class="goodCount">
+                <text>{{item.score}}</text>
+              </view>
+            </view>
+
+<navigator url='../videoComment/videoComment?&mid={{item.id}}'>
+            <image bindtap="change" class="comment" src="../../images/conment.png"></image>
+            </navigator>
+            <image class="share" src="../../images/share.png"></image>
+
+          </view>
+        </view>
+
+      </block>
+    </view>
+    <view class='video' hidden="{{currentTabsIndex!=2}}">
+      <!-- 开始循环 -->
+      <block wx:for="{{videoList}}">
+        <view class='video-item' wx:if="{{index<30&&index>=20}}">
+          <view class='wrapper'>
+            <!-- 视频 -->
+            <video class='video-video' wx:if='{{index==videoIndex}}' id='video{{index}}' autoplay='{{true}}' show-center-play-btn="{{false}}" src='https://v1.itooi.cn/netease/mvUrl?id={{item.id}}&quality=1080'></video>
+            <!-- cover海报 -->
+            <image class='videocover' wx:if='{{index!=videoIndex}}' mode='aspectFill' src='{{item.cover}}'></image>
+            <!-- 播放按钮 -->
+            <image class='videoPlay' wx:if='{{index!=videoIndex}}' data-index='{{index}}' bindtap='videoPlay' src='/images/play.png'></image>
+
+          </view>
+          <navigator url='../videoPlay/videoPlay?&mid={{item.id}}'>
+            <view class='video-name'>{{item.name}}</view>
+            <view class='video-desc' style="{{item.upStatus?'':'display:-webkit-box'}}">{{item.alias}} </view>
+            <view class='video-desc' style="{{item.upStatus?'':'display:-webkit-box'}}">{{item.briefDesc}} </view>
+
+          </navigator>
+          <!-- 底部 -->
+          <!-- 展开信息 -->
+
+          <view class='video-btn'>
+
+            <view class="words">
+              <text>{{item.artistName}}</text>
+            </view>
+            <image class="related" src="https://v1.itooi.cn/netease/pic?id={{37239001+index}}"></image>
+            <view class="good-view" data-index="{{index}}" bindtap='nice'>
+              <image class='good' hidden='{{item.upStatus}}' src="../../images/xg.png"></image>
+              <image class='good' hidden='{{!item.upStatus}}' src="../../images/xi.png"></image>
+              <view class="goodCount">
+                <text>{{item.score}}</text>
+              </view>
+            </view>
+
+
+            <navigator url='../videoComment/videoComment?&mid={{item.id}}'>
+            <image bindtap="change" class="comment" src="../../images/conment.png"></image>
+            </navigator>
+            <image class="share" src="../../images/share.png"></image>
+
+          </view>
+
+        </view>
+
+      </block>
+    </view>
+    <view class='video' hidden="{{currentTabsIndex!=3}}">
+      <!-- 开始循环 -->
+      <block wx:for="{{videoList}}">
+        <view class='video-item' wx:if="{{index<40&&index>=30}}">
+          <view class='wrapper'>
+            <!-- 视频 -->
+            <video class='video-video' wx:if='{{index==videoIndex}}' id='video{{index}}' autoplay='{{true}}' show-center-play-btn="{{false}}" src='https://v1.itooi.cn/netease/mvUrl?id={{item.id}}&quality=1080'></video>
+            <!-- cover海报 -->
+            <image class='videocover' wx:if='{{index!=videoIndex}}' mode='aspectFill' src='{{item.cover}}'></image>
+            <!-- 播放按钮 -->
+            <image class='videoPlay' wx:if='{{index!=videoIndex}}' data-index='{{index}}' bindtap='videoPlay' src='/images/play.png'></image>
+
+          </view>
+          <navigator url='../videoPlay/videoPlay?&mid={{item.id}}'>
+            <view class='video-name'>{{item.name}}</view>
+            <view class='video-desc' style="{{item.upStatus?'':'display:-webkit-box'}}">{{item.alias}} </view>
+            <view class='video-desc' style="{{item.upStatus?'':'display:-webkit-box'}}">{{item.briefDesc}} </view>
+
+          </navigator>
+          <!-- 底部 -->
+          <!-- 展开信息 -->
+
+           <view class='video-btn'>
+            <view class="words">
+              <text>{{item.artistName}}</text>
+            </view>
+            <image class="related" src="https://v1.itooi.cn/netease/pic?id={{37239001+index}}"></image>
+            <view class="good-view" data-index="{{index}}" bindtap='nice'>
+              <image class='good' hidden='{{item.upStatus}}' src="../../images/xg.png"></image>
+              <image class='good' hidden='{{!item.upStatus}}' src="../../images/xi.png"></image>
+              <view class="goodCount">
+                <text>{{item.score}}</text>
+              </view>
+            </view>
+          <navigator url='../videoComment/videoComment?&mid={{item.id}}'>
+            <image bindtap="change" class="comment" src="../../images/conment.png"></image>
+          </navigator>
+            <image class="share" src="../../images/share.png"></image>
+          </view>
+
+        </view>
+
+      </block>
+    </view>
+  </view>
+</view>

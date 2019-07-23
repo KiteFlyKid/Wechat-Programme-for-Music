@@ -1,0 +1,75 @@
+<!--pages/songList/songList.wxml-->
+
+<view class="topBlank"></view>
+
+<!--推荐歌单列表-->
+<view class="first_radio_list">
+  <view class="list_title">为你推荐</view>
+
+  <movable-area>
+    <movable-view direction="horizontal" inertia="true">
+      <view wx:for="{{songList.list}}" wx:key="{{songList.list}}">
+        <view class="movable_img" data-id="{{item.id}}" bindtap="getIn">
+          <image src="{{item.imgurl}}"></image>
+          <view style="overflow: hidden;text-overflow:ellipsis;white-space: nowrap;">{{item.dissname}}</view>
+        </view>
+      </view>
+    </movable-view>
+  </movable-area>
+</view>
+
+<view class="topBlank"></view>
+
+<!--热门歌单-->
+<view class="second_radio_list">
+  <view class="list_title">热门歌单</view>
+
+  <view class="radio_wrapper">
+    <block wx:for="{{hotList}}" wx:key="{{hotList}}">
+      <view class="radio_img" data-id="{{item.id}}" bindtap="getIn">
+        <navigator url="../gedan/gedan?id={{item.id}}">
+          <image class="radio_image" src="{{item.coverImgUrl}}"></image>
+        </navigator>
+        <view class="radio_text" style="word-wrap:break-word;">{{item.name}}</view>
+        <image class="radio_icon" src="../../image/1.png"></image>
+        <image class="radio_play" data-id="{{item.id}}" src="../../images/stop.png"></image>
+        <text class="radio_num">{{item.playCount}}</text>
+      </view>
+    </block>
+  </view>
+</view>
+
+<navigator url="../more1/more1">
+  <view class="more m1">
+    <text>更多</text>
+    <image src="../../image/a6a.png"></image>
+  </view>
+</navigator>
+
+<view class="topBlank"></view>
+
+<!--精品歌单-->
+<view class="second_radio_list">
+  <view class="list_title">精品歌单</view>
+
+  <view class="radio_wrapper">
+    <block wx:for="{{highQuality}}" wx:key="{{highQuality}}">
+      <view class="radio_img" data-id="{{item.id}}" bindtap="getIn">
+        <navigator url="../gedan/gedan?id={{item.id}}">
+          <image class="radio_image" src="{{item.coverImgUrl}}"></image>
+        </navigator>
+        <view class="radio_text" style="word-wrap:break-word;">{{item.name}}</view>
+        <image class="radio_icon" src="../../image/1.png"></image>
+        <image class="radio_play" data-id="{{item.id}}" src="../../images/stop.png"></image>
+        <text class="radio_num">{{item.playCount}}</text>
+      </view>
+    </block>
+  </view>
+</view>
+
+<navigator url="../more2/more2">
+  <view class="more m2">
+    <text>更多</text>
+    <image src="../../image/a6a.png"></image>
+  </view>
+</navigator>

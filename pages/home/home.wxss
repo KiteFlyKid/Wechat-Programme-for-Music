@@ -1,0 +1,136 @@
+/* pages/home/home.wxss */
+swiper{
+height: 400rpx;
+}
+swiper image{
+width:100%;
+height: 100%;
+border-radius: 20rpx;
+}
+.midTab{
+height: 200rpx;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.midTab view{
+width: 22%;
+height: 80%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.midTab view image{
+width: 140rpx;
+height: 170rpx;
+}
+.centerblank{
+width: 100%;
+height: 5rpx;
+background-color:#d2cdcd83;
+}
+.newtitle view{
+margin-top: 600rpx; 
+}
+.newtitle view text{
+font-weight:700;
+font-size: 20rpx;
+color: rgba(41, 35, 35, 0.856);
+}
+.newest0{
+margin-top: 150rpx;
+background-color: white;
+display: flex;
+flex-direction:column;
+}
+.newest1{
+margin-top: 150rpx;
+background-color: white;
+display: flex;
+flex-direction:column;
+}
+.newest2{
+margin-top: 150rpx;
+background-color: white;
+display: flex;
+flex-direction:column;
+}
+.newest3{
+margin-top: 150rpx;
+background-color: white;
+display: flex;
+flex-direction:column;
+}
+.newest4{
+margin-top: 150rpx;
+background-color: white;
+display: flex;
+flex-direction:column;
+}
+.newest5{
+margin-top: 150rpx;
+background-color: white;
+display: flex;
+flex-direction:column;
+}
+
+movable-area{
+width: 200%;
+height: 500rpx;
+}
+movable-view{
+width:200%;
+height: 300rpx;
+display: flex;
+justify-content:flex-start;
+align-items: center;
+}
+movable-view view{
+margin-right: 40rpx;
+}
+.list image{
+width: 300rpx;
+height:300rpx;
+border-radius: 50rpx;
+align-items: center;
+}
+.list text{
+font-size: 30rpx;
+color: rgb(41, 35, 35);
+}
+.jingxuan view image{
+margin-top: 20rpx;
+width: 700rpx;
+height: 85rpx;
+}
+.jingxuan view text{
+font-size: 35rpx;
+color: gray;
+}
+.mv video{
+display: flex;
+padding-left: 50rpx;
+justify-content: center; 
+align-items: center;
+}
+.danmuGrop{
+margin-top:20rpx;
+display: flex;
+}
+.danmuinput{
+border: solid 1px #ccc;
+margin-left: 40rpx;
+height: 60rpx;
+line-height: 80rpx;
+font-size: 35rpx;
+padding-left: 20rpx;
+border-radius: 10rpx;
+width: 70%;
+}
+.newcenterblank{
+margin-top: 10rpx;
+width: 100%;
+height: 10rpx;
+background-color:#d2cdcd83;
+}

@@ -1,0 +1,125 @@
+/* pages/use1/user1.wxss */
+.fengmian{
+  width: 100%;
+  height: 600rpx;
+  position: relative;
+}
+.fengmian .beijing image{
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  position: absolute;
+  border-radius: 40rpx;
+}
+
+.fengmian .touxiang image{
+  width: 150rpx;
+  height: 150rpx;
+  top: 150rpx;
+  left: 100rpx;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.fengmian .name {
+  width: 200rpx;
+  height: 80rpx;
+  position: absolute;
+  top: 320rpx;
+  left: 100rpx;
+}
+
+.fengmian .name {
+font-weight: bold;
+
+}
+
+.fengmian .work{
+  width: 200rpx;
+  height: 80rpx;
+  position: absolute;
+  top: 380rpx;
+  left: 100rpx;
+}
+
+
+.fengmian .self{
+  width: 100%;
+  height: 90rpx;
+  top: 450rpx;
+  position: absolute;
+  border: 3rpx;
+  border-color: sandybrown;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.guanyu{
+  width: 100%;
+  height: 80rpx;
+}
+
+.about{
+  width: 100%;
+  height: 250rpx;
+  position: relative;
+  border-radius: 20rpx;
+  background-color: skyblue
+  
+}
+.about .bj image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.about .renzheng text{
+  font-weight: bold;
+  position: absolute;
+}
+.about .jiben{
+  width: 100%;
+  height: 250rpx;
+  top:60rpx;
+  left: 100rpx;
+  position: absolute;
+  
+}
+
+.about .jiben text{
+  font-size: 35rpx;
+}
+
+.about .jiben image{
+  width: 45rpx;
+  height: 45rpx;
+}
+
+
+.geqian{
+  width: 100%;
+  height: 250rpx;
+  position: relative;
+}
+.geqian .biankuang image{
+ 
+  width: 100%;
+  height: 100%;
+   position: absolute;
+   border-radius: 40rpx;
+}
+
+
+
+
+.geqian .ge text{
+  font-weight: bold;
+  position: absolute;
+}
+
+.geqian .qian  {
+   position: absolute;
+   left: 130rpx;
+   top:80rpx;
+}

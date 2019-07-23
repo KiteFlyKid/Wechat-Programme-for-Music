@@ -1,0 +1,47 @@
+<!--pages/use1/user1.wxml-->
+
+
+
+<!--封面 头像 昵称 简介-->
+<view class='fengmian'>
+  <view class='beijing'><image src='../../image/beijing2.jpg'></image></view>
+  <view class='touxiang'><image src='../../image/3.jpg'></image></view>
+  <view class='name'><text>奋斗一号o</text></view>
+  <view class='work'><text>学生</text></view>
+  <view class='self'>
+   <view><text>00后</text></view>
+   <view><text>Lv.5</text></view>
+   <view><text>石家庄市</text></view>
+   <view><text>处女座</text></view>
+  </view>
+</view>
+
+
+
+
+<!--认证 个性签名-->
+<view class='about'>
+     <view class='bj'><image src='../../image/biankuang5.jpg'></image></view>
+     <view class='renzheng'><text>认证信息:</text></view>
+    <view class='jiben'>
+     <view>
+       <image src='../../image/vip.png'></image>
+       <text>网易听歌王</text>
+     </view>
+     <view>
+       <image src='../../image/vip1.png'></image>
+       <text>音乐原创视频达人</text>
+      </view>
+    </view>
+</view>
+
+
+<view class='geqian'>
+  <view class='biankuang'><image src='../../image/biankuang3.jpg'></image> </view>
+     <view class='ge'><text>个性签名：</text> </view>
+      <view class='qian'><text>今天也想见到你，不管什么天气。</text></view>  
+
+
+  
+
+</view>

@@ -1,0 +1,85 @@
+
+.darkMode .page{
+  background-color: #222;
+}
+
+.darkMode .profile {
+  background-color: #333;
+}
+
+.darkMode .levelFrame{
+  background-color: #4e4e4e;
+
+}
+/* 第二部分 */
+.darkMode .number{
+  background: #333;
+  border-top-color: #616161;
+}
+
+.darkMode .block{
+  border-right: 1rpx solid #616161;
+}
+.darkMode .block:last-of-type{
+  border-right-color: #333;
+}
+
+.darkMode .lists{
+  background-color: #333;
+}
+
+/* 第三部分 */
+
+.darkMode .links{
+
+  background-color: #333;
+}
+
+/* 第四部分 */
+.darkMode .favorite {
+background-color: #333;
+}
+
+.darkMode .favorite view:first-of-type{
+background-color: #333;
+}
+
+.darkMode .favorite text:last-of-type{
+  color: #999;
+}
+
+.darkMode .mode{
+  background-color: #333;
+  align-items: center;
+}
+
+.darkMode text{
+  color: whitesmoke;
+}
+
+.darkMode .below{
+  border-top-color: #616161;
+}
+
+.darkMode .quit{
+  color: tomato;
+}
+
+.darkMode .pageFavorite{
+  background: #333;
+}
+
+.darkMode .movable{
+  background-color: #616161;
+}
+
+.darkMode .bofang{
+  background-color: #616161;
+}
+
+.darkMode .v3{
+  border-bottom-color: #4e4e4e
+}
+.darkMode .movable{
+  border-top-color: #4e4e4e
+}

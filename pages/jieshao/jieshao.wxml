@@ -1,0 +1,15 @@
+<view class="frame">
+  <view class="logoFrame">
+    <image src="../../images/logo123.jpg"></image>
+  </view>
+</view>
+
+<view class="intro">
+  <view class="introFrame">
+    <view class="title">
+      <view><text>川大2019实训203第七组</text></view>
+      <view><text>WaterFox</text></view>
+      </view>
+      <text>组员：\n \t\t陈斌 曹一鸣 胡加润 黄秋果 李奕轩\n \t\t马尚 石子齐 万劼  王佩琦 朱琦琳</text>
+  </view>
+</view>

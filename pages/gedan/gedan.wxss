@@ -1,0 +1,206 @@
+page{
+  color:#333;
+  background:#e60026;
+}
+.v1{
+  width: 100%;
+  height: 90rpx;
+  background-color:transparent;
+}
+
+.v1 text{
+  margin:10rpx 50rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.v1 text:nth-of-type(1){
+  color: white;
+  background:transparent;
+  width:200rpx;
+}
+
+.v1 text:nth-of-type(2){
+  color: rgb(218, 173, 173);
+  background:transparent;
+  width:450rpx;
+  font-size: 60%;
+  height: 60rpx;
+  overflow:hidden; 
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+.v1 image{
+  position:absolute;
+  margin:-140rpx 620rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.v2{
+  width: 100%;
+  height: 220rpx;
+  background-color:transparent;
+}
+
+.v2 image{
+  position:absolute;
+  margin:50rpx 30rpx;
+  width: 250rpx;
+  height: 250rpx;
+}
+
+.v2 text{
+  position:absolute;
+  margin:50rpx 320rpx;
+  color:white;
+  background:transparent;
+  width:411rpx;
+}
+
+.controller{
+  width: 70%;
+  height:120rpx;
+  margin:120rpx auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.controller image{
+  width:  45rpx;
+  height: 45rpx;
+}
+
+
+.peizi{
+  color: white;
+  font-size: 50%;
+  width: 65%;
+  height:120rpx;
+  position: absolute;
+  margin:-180rpx 115rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.peizi{
+  width: 522rpx;
+  height: 30rpx;
+}
+
+.fixView{
+  position: fixed;
+}
+
+.v3{
+  width:100%;
+  height: 100rpx;
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.v3 view4{
+  width:50rpx;
+  height:50rpx;
+  position:relative;
+  margin: 200rpx 0rpx;
+}
+
+.v3 view3{
+  width: 350rpx;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin:0rpx 70rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+.v3 navigator{
+  width:100%;
+  height: 100%; 
+}
+
+.v3 text:nth-of-type(1){
+ font-family: "微软雅黑";
+ font-size:90%;
+ width: 350rpx;
+ overflow:hidden; 
+ text-overflow:ellipsis;
+ white-space:nowrap;
+}
+
+.v3 text:nth-of-type(2){
+ font-size:65%;
+ width: 350rpx;
+ overflow:hidden; 
+ text-overflow:ellipsis;
+ white-space:nowrap;
+}
+
+.v3 image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.bofang{
+  height: 1400rpx;
+  width: 100%;
+  margin:-120rpx 0;
+  background-color: white;
+  border-radius: 3%;
+  overflow:hidden;
+}
+movable-area{
+  position:absolute;
+  margin-bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  overflow:hidden;
+}
+
+movable-view{
+  width: 100%;
+  height:10000%;
+  overflow:hidden;
+}
+
+.v3 view4{
+  width:50rpx;
+  height: 50rpx;
+}
+
+.v3 view3{
+  width: 370rpx;
+  height: 100rpx;
+}
+
+.blank{
+  width: 100%;
+  height: 20rpx;
+}
+
+.titleWrap{
+  margin: 30rpx auto;
+  width:90%;
+  height: 66rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-weight: bold;
+}
+
+.neirong{
+  width: 100%;
+  height: 700rpx;
+  background-color: transparent;
+  overflow: hidden;
+}
+

@@ -1,0 +1,47 @@
+<!--pages/use1/user1.wxml-->
+
+
+
+<!--封面 头像 昵称 简介-->
+<view class='fengmian'>
+  <view class='beijing'><image src='../../image/beijing.jpg'></image></view>
+  <view class='touxiang'><image src='../../image/1.jpg'></image></view>
+  <view class='name'><text>泥鳅Niko</text></view>
+  <view class='work'><text>网易音乐人</text></view>
+  <view class='self'>
+   <view><text>90后</text></view>
+   <view><text>Lv.9</text></view>
+   <view><text>成都市</text></view>
+   <view><text>双星座</text></view>
+  </view>
+</view>
+
+
+
+
+<!--认证 个性签名-->
+<view class='about'>
+     <view class='bj'><image src='../../image/biankuang5.jpg'></image></view>
+     <view class='renzheng'><text>认证信息:</text></view>
+    <view class='jiben'>
+     <view>
+       <image src='../../image/vip.png'></image>
+       <text>网易音乐人</text>
+     </view>
+     <view>
+       <image src='../../image/vip1.png'></image>
+       <text>音乐原创视频达人</text>
+      </view>
+    </view>
+</view>
+
+
+<view class='geqian'>
+  <view class='biankuang'><image src='../../image/biankuang1.jpg'></image> </view>
+     <view class='ge'><text>个性签名：</text> </view>
+      <view class='qian'><text>就算留恋也不要回头看</text></view>  
+
+
+  
+
+</view>

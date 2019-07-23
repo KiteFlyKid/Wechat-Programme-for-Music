@@ -1,0 +1,52 @@
+/* pages/Info/Info.wxss */
+page{
+  background-color: beige;
+}
+.frame {
+  width: 100%;
+  height: 400rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoFrame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoFrame image {
+  width: 300rpx;
+  height: 300rpx;
+}
+
+
+.intro{
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.introFrame{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro text{
+  justify-content: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title view{
+  display: flex;
+  justify-content: center;
+}

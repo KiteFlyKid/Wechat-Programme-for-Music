@@ -1,0 +1,49 @@
+<image class="background" src="../../image/cm2_default_play_bg-ip6@2x.jpg" mode="aspectFill">
+
+</image>
+<view id="playing-zz">
+  <image src="../../image/aag.png" animation="{{animationDataRoll}}" />
+</view>
+<!-- <view class="exitButton">
+  <image src="../../images/delete1.png" bindtap="exitThisPage"></image>
+</view> -->
+
+<view class="music_info">
+  <view>
+    <text>{{mname}}</text>
+  </view>
+  <view>
+    <text>{{mauthor}}</text>
+  </view>
+</view>
+
+<view class="music_poster">
+  <view animation="{{animationData}}">
+    <image src="https://v1.itooi.cn/netease/pic?id={{storageData.data.id}}"></image>
+  </view>
+</view>
+
+
+
+
+
+<view class="controller">
+  <image src="{{isLove?'../../image/cm2_play_icn_loved@2x.png':'../../image/cm2_play_icn_love@2x.png'}}" bindtap="likeOrNot"></image>
+  <image src="../../image/cm2_list_detail_icn_dld@2x.png"></image>
+  <navigator url="../comment/comment?mid={{mid}}">
+    <image src="../../image/cm2_list_detail_icn_cmt@2x.png"></image>
+  </navigator>
+  <image src="../../images/delete.png" bindtap="clearAllStorage"></image>
+</view>
+
+<view class="music_progress">
+  <progress percent='{{mPercent}}' show-info="true" stroke-width='2' color='#f8c43a'></progress>
+</view>
+
+<view class="music_controll">
+  <image src="{{randomPlay?'../../images/random.png':'../../image/cm2_icn_loop@2x.png'}}" bindtap='randomOrSequence'></image>
+  <image src="../../images/left.png" bindtap='beforeOne'></image>
+  <image src="{{play?'../../images/play.png':'../../images/stop.png'}}" bindtap='playOrPause'></image>
+  <image src="../../images/right.png" bindtap='afterOne'></image>
+  <image src="../../images/menu.png"></image>
+</view>

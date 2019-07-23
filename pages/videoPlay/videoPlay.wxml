@@ -1,0 +1,103 @@
+<!-- 视频及信息 -->
+
+<view class="top">
+  <view class="video-class">
+    <video class="video" src='https://v1.itooi.cn/netease/mvUrl?id={{videoInfo.id}}&quality=1080'  autoplay='{{false}}' show-center-play-btn="{{false}}"></video>
+  </view>
+  <view class="tittle">
+    <view><text>{{videoInfo.name}}</text></view>
+    <view class="des"><text>{{videoInfo.desc}}</text></view>
+  </view>
+  <view class="info">
+    <view class="countSee"><text> {{videoInfo.playCount}}次观看 </text></view>
+    
+    
+      <view><text> MV </text></view>
+      <view><text> 流行 </text></view>
+      <view><text>音乐推荐</text></view>
+      <view><text>好听</text></view>
+  </view>
+  <view class="icon">
+    <view class="num">
+      <image src="../../images/xg.png"></image>
+      <text>{{1000+(videoInfo.subCount)*2}}</text>
+    </view>
+    <view class="num">
+      <image src="../../images/shoucang.png"></image>
+      <text>{{videoInfo.subCount}}</text>
+    </view>
+    <view class="num">
+      <image src="../../images/conment.png"></image>
+      <text>{{videoInfo.commentCount}}</text>
+    </view>
+    <view class="num">
+      <image src="../../images/share.png"></image>
+      <text>{{videoInfo.shareCount}}</text>
+    </view>
+</view>
+</view>
+<!-- 评论 -->
+<!--pages/comment/comment.wxml-->
+
+
+
+<view class="topC">
+<view>
+<text></text>
+<text>评论({{commentData.total}})</text>
+
+</view>
+</view>
+
+
+
+<view class="top_2">
+<text>热门评论</text>
+</view>
+
+<view class="hotComments">
+<view wx:for="{{commentData.hotComments}}"> 
+<view class="infoC">
+<image src="{{item.user.avatarUrl}}"></image>
+<text>{{item.user.nickname}}</text>
+
+<text>{{item.likedCount}}</text>
+<image src="../../images/xg.png"></image>
+</view>
+<view class="content">
+<text>{{item.content}}</text>
+<view>
+<image src="../../images/xr.png"></image>
+</view>
+</view>
+ </view>
+ </view>
+ 
+
+
+
+ <view class="top_3">
+ <text>全部评论</text>
+ </view>
+
+
+<view class="comments">
+<view wx:for="{{commentData.comments}}"> 
+<view class="infoC">
+<image src="{{item.user.avatarUrl}}"></image>
+<text>{{item.user.nickname}}</text>
+
+
+<text>{{item.likedCount}}</text>
+<image src="../../images/xg.png"></image>
+
+</view>
+<view class="content">
+<text>{{item.content}}</text>
+<view>
+<image src="../../images/xr.png"></image>
+</view>
+</view>
+ </view>
+ </view>
+ 

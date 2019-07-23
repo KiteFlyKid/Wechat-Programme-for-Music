@@ -1,0 +1,42 @@
+<!--pages/playerRank/playerRank.wxml-->
+<!--顶部照片-->
+
+
+
+<view class="top">
+  <image src='../../images/timg1.jpg'></image>
+</view>
+
+
+<view class="head">
+  <view class="head1" bindtap="startplay">
+    <!--<image src="{{playpic}}" catchtap="change" bindtap="startplay"></image>-->
+    <text>华语</text>
+  </view>
+  <view class='head2'>
+    <image></image>
+    <image></image>
+  </view>
+  <view class='head3'>
+    <view>
+      <text>歌单数</text>
+    </view>
+  </view>
+</view>
+
+<!--音乐人列表-->
+<view class="playList">
+  <view wx:for="{{playerList}}">
+    <!--事件绑定：点击当前view的时候，进入js寻找-->
+    <view data-id='{{index}}'>
+      <navigator>
+      <image mode='widthFix' src="{{item.img1v1Url}}"></image>
+      <view>
+        <text>{{item.name}}</text>
+      </view>
+      <text>{{item.albumSize}}</text>
+      </navigator>
+
+    </view>
+  </view>
+</view>

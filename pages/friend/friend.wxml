@@ -1,0 +1,121 @@
+<!--pages/friend/friend.wxml-->
+
+<view class='user1'>
+      <navigator url='../user1/user1'><view><image   src='../../image/1.jpg'></image></view></navigator>
+       
+    
+    
+    <view class='word'>
+      
+      <view>
+       <text>泥鳅Niko</text>
+      </view>
+     
+      <view>
+       <text>发布视频:</text>
+      </view>
+    
+    </view>
+    
+    <view class='time'>
+      <text>12:45</text>
+    </view>
+
+    <view class='tittle'>
+       <text>和老机油一起唱歌，真爽！</text>
+    </view>
+
+  <view class='control'>
+   <image src="{{goodImg}}" bindtap='goodOrno'></image>
+   <image src="{{guanImg}}" bindtap='guanOrno'></image>
+  </view>
+
+ 
+  <navigator url='../videoFriend/videoFriend'><view class='mv'>
+   <image src='../../image/shipin0.jpg'></image>
+  </view>
+  </navigator>
+
+
+
+</view>
+
+
+<view class='user2'>
+ <navigator url='../user2/user2'><view><image src='../../image/3.jpg'></image></view></navigator>
+    <view class='word'>
+      
+      <view>
+       <text>奋斗一号</text>
+      </view>
+     
+      <view>
+       <text>发布视频:</text>
+      </view>
+    
+    </view>
+    
+    <view class='time'>
+      <text>13：00</text>
+    </view>
+
+    <view class='tittle'>
+       <text>我多想能多陪你一场！</text>
+    </view>
+
+  <view class='control'>
+  <image src="{{goodImg2}}" bindtap='goodOrnotwo'></image>
+   <image src="{{guanImg2}}" bindtap='guanOrnotwo'></image>
+  </view>
+
+  <navigator url='../videoFriend/videoFriend'>
+  <view class='mv'>
+   <image src='../../image/shipin1.jpg'></image>
+  </view>
+  </navigator>
+
+
+
+</view>
+
+
+<view class='user3'>
+   <navigator url='../user3/user3'><view><image src='../../image/2.jpg'></image></view></navigator>
+     <view class='word'>
+      <view>
+       <text>萌德不萌</text>
+      </view>
+     
+      <view>
+       <text>发布视频:</text>
+      </view>
+    
+    </view>
+    
+    <view class='time'>
+      <text>13：20</text>
+    </view>
+
+    <view class='tittle'>
+       <text>我这掐指一算可还行？</text>
+    </view>
+
+  <view class='control'>
+   <image src="{{goodImg3}}" bindtap='goodOrnothree'></image>
+   <image src="{{guanImg3}}" bindtap='guanOrnothree'></image>
+  </view>
+
+  
+  <navigator url='../videoFriend/videoFriend'>
+  <view class='mv'>
+   <image src='../../image/shipin2.jpg'></image>
+  </view>
+   </navigator>
+
+
+</view>
+
+
+
+
+

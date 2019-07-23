@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/videoSquare/videoSquare",
+    "pages/videoComment/videoComment",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/play/play",
+    "pages/play_2/play_2",
+    "pages/playerRank/playerRank",
+    "pages/mine/mine",
+    "pages/jieshao/jieshao",
+    "pages/friend/friend",
+    "pages/videoFriend/videoFriend",
+    "pages/videoPlay/videoPlay",
+    "pages/rank/rank",
+    "pages/songList/songList",
+    "pages/share/share",
+    "pages/search/search",
+    "pages/favorite/favorite",
+    "pages/gedan/gedan",
+    "pages/user1/user1",
+    "pages/user2/user2",
+    "pages/user3/user3",
+    "pages/more1/more1",
+    "pages/more2/more2"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#e60026",
+    "navigationBarTitleText": "waterFox_Music",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "position": "top",
+    "color": "#6f6969",
+    "selectedColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/friend/friend",
+        "text": "朋友"
+      },
+      {
+        "pagePath": "pages/videoSquare/videoSquare",
+        "text": "视频广场"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

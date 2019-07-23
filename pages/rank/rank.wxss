@@ -1,0 +1,91 @@
+/* pages/rank/rank.wxss */
+.top{
+  width: 100%;
+  height:350rpx;
+}
+.top image{
+  width:100%;
+  height:350rpx;
+}
+.cont{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.cont view text{
+  padding-left: 15rpx;
+}
+.cont view:nth-of-type(1){
+  height: 80rpx;
+  width: 300rpx;
+  display: flex;
+  align-items: center;
+}
+.cont view:nth-of-type(2){
+  height: 80rpx;
+  width: 150rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cont image{
+  height: 80rpx;
+  width: 80rpx;
+}
+
+.v2 image:first-child{
+  width:60rpx;
+  height: 60rpx;
+}
+.v2 image:nth-of-type(2){
+  width: 55rpx;
+  height: 55rpx;
+}
+
+.v3{
+  width: 200rpx;
+  background-color:rgb(248, 106, 106);
+  border-radius: 40rpx;
+}
+.v3 text{
+  font-size: 28rpx;
+}
+.playlist{
+  width: 100%;
+  height: 100%;
+  border-radius: 25rpx;
+}
+.playlist view{
+  left: 30rpx;
+  width: 100%;
+  height:120rpx;
+  padding-bottom: 30rpx;
+  
+}
+.playlist image{
+  width:200rpx;
+  height:140rpx;
+  padding: 30rpx 30rpx;
+}
+.playlist view .navigator{
+  width:90%;
+  top: 50rpx;
+  height:130rpx;
+  padding: 20rpx 20rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.playlist view .navigator text:nth-of-type(2){
+  font-size: 28rpx;
+}
+.playlist view .navigator text{
+  top: 30rpx;
+  display: flex;
+  padding-bottom: 20rpx;
+}
+.navigator view text:last-child{
+  right: 100rpx;
+}

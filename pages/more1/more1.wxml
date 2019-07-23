@@ -1,0 +1,16 @@
+<!--pages/more1/more1.wxml-->
+<view class="second_radio_list">
+  <view class="radio_wrapper">
+    <block wx:for="{{hotList}}" wx:key="{{hotList}}">
+      <view class="radio_img" data-id="{{item.id}}" bindtap="getIn">
+        <navigator url="../gedan/gedan?id={{item.id}}">
+          <image class="radio_image" src="{{item.coverImgUrl}}"></image>
+        </navigator>
+        <view class="radio_text" style="word-wrap:break-word;">{{item.name}}</view>
+        <image class="radio_icon" src="../../image/1.png"></image>
+        <image class="radio_play" data-id="{{item.id}}" src="../../images/stop.png"></image>
+        <text class="radio_num">{{item.playCount}}</text>
+      </view>
+    </block>
+  </view>
+</view>

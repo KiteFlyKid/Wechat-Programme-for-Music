@@ -1,0 +1,37 @@
+<!--pages/rank/rank.wxml-->
+<view class="top">
+ <image src="../../images/timg1.gif"></image>
+</view>
+
+<view class="cont">
+     <view class="v1" bindtap="startplay">
+       <image src="{{playpic}}" catchtap="change" bindtap="startplay"></image>
+       <text>全部播放</text>
+     </view>
+     <view class="v2">
+       <image src="../../images/xz.png"></image>
+       <image src="../../images/share.png"></image>
+     </view>
+     <view class="v3">
+       <view>
+        <text>+收藏(208.5万)</text>
+       </view>
+     </view>
+   </view>
+
+ <!--播放列表-->
+<view class="playlist">
+ <view wx:for="{{songlist.tracks}}" wx:key="{{songlist.tracks}}">
+ <!--事件绑定：点击当前view的时候，进入js寻找-->
+  <view bindtap='openPlay' data-id='{{index}}' class="navigator">
+  <!-- <navigator url='../play/play?mn={{item.name}}&ma={{item.singer}}&mu={{item.url}}&mp={{item.pic}}&mid={{item.id}}'> -->
+    <image mode='widthFix' src="https://v1.itooi.cn/netease/pic?id={{item.id}}"></image>
+    <view>
+    <text>{{item.name}}</text>
+    <text>{{item.artists[0].name}}</text>
+    <!-- <text>{{item.creator}}</text>--></view> 
+    <!-- <text>{{item.time}}</text> -->
+  <!-- </navigator> -->
+  </view>
+ </view>
+</view>

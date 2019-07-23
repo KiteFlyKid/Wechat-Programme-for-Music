@@ -1,0 +1,145 @@
+<!--pages/wode/wode.wxml-->
+<view class="myMode {{skinStyle}}Mode">
+  <view class="page">
+    <view class="profile">
+      <view class="item">
+        <image src="../../images/logo123.jpg"></image>
+        <view class="nickname">
+          <text>WaterFox</text>
+          <view class="levelFrame">
+            <text>lv.99</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="number">
+      <view class="item">
+        <view class="block">
+          <text>17</text>
+          <text>动态</text>
+        </view>
+        <view class="block">
+          <text>15</text>
+          <text>关注</text>
+        </view>
+        <view class="block">
+          <text>7158</text>
+          <text>粉丝</text>
+        </view>
+        <view class="block">
+          <image src="../../images/cm2_btm_icn_account.png"></image>
+          <text>编辑资料</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="margin"></view>
+
+    <view class="links">
+      <view class="item">
+        <view class="block">
+          <image src="../../images/cm2_discover_icn_3@2x.png"></image>
+          <text>消息</text>
+        </view>
+        <view class="block">
+          <image src="../../images/cm2_discover_icn_0@2x.png"></image>
+          <text>商城</text>
+        </view>
+        <view class="block">
+          <image src="../../images/cm2_discover_icn_1@2x.png"></image>
+          <text>演出</text>
+        </view>
+        <view class="block">
+          <image src="../../images/cm2_discover_icn_4@2x.png"></image>
+          <text>皮肤</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="margin"></view>
+
+    <view class="favorite" bindtap="openFavorite">
+      <view>
+        <image src="../../images/heart2.png"></image>
+      </view>
+      <view>
+        <text>我喜欢的音乐</text>
+        <text>共有 {{musicNumber}} 首音乐</text>
+      </view>
+    </view>
+
+    <view class="margin"></view>
+
+    <view class="mode below ">
+      <text class="textTitle">设置</text>
+      <image class="smallLogo" src="../../images/a6a.png"></image>
+    </view>
+
+    <view class="mode">
+      <text class="textTitle">夜间模式</text>
+      <switch bindchange="switchChange" color="#e60026" class="switch" />
+    </view>
+
+    <view class="mode below ">
+      <text class="textTitle">定时关闭</text>
+      <image class="smallLogo" src="../../images/a6a.png"></image>
+    </view>
+
+    <view class="mode below ">
+      <text class="textTitle">音乐闹钟</text>
+      <image class="smallLogo" src="../../images/a6a.png"></image>
+    </view>
+
+    <view class="mode below ">
+      <text class="textTitle">音乐闹钟</text>
+      <image class="smallLogo" src="../../images/a6a.png"></image>
+    </view>
+
+    <view class="margin"></view>
+
+    <view class="mode below ">
+      <text class="textTitle">在线听歌免流量</text>
+      <image class="smallLogo" src="../../images/a6a.png"></image>
+    </view>
+
+    <view class="mode below ">
+      <text class="textTitle">优惠券</text>
+      <image class="smallLogo" src="../../images/a6a.png"></image>
+    </view>
+
+    <view class="margin"></view>
+
+    <view class="mode below ">
+      <text class="textTitle">加入网易音乐人</text>
+      <image class="smallLogo" src="../../images/a6a.png"></image>
+    </view>
+
+    <view class="mode below ">
+      <text class="textTitle">我要直播</text>
+      <image class="smallLogo" src="../../images/a6a.png"></image>
+    </view>
+
+    <view class="mode below ">
+      <text class="textTitle">分享网易云音乐</text>
+      <image class="smallLogo" src="../../images/a6a.png"></image>
+    </view>
+
+    <view class="mode below " bindtap="openInfo">
+      <text class="textTitle">关于我们</text>
+      <image class="infoLogo " src="../../images/cm2_list_detail_icn_infor@2x.png"></image>
+    </view>
+
+    <view class="mode below ">
+      <text class="textTitle">当前版本</text>
+      <text id="id">0.9.0</text>
+    </view>
+
+    <view class="margin"></view>
+
+   <view class="mode below logOut">
+      <text class="quit">退出登陆</text>
+    </view>
+
+  </view>
+</view>

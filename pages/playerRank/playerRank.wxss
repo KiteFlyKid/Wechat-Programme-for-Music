@@ -1,0 +1,101 @@
+/* pages/playerRank/playerRank.wxss */
+.top{
+  width: 100%;
+  height:500rpx;
+}
+.top image{
+  width:100%;
+  height:500rpx;
+}
+/*功能区*/
+.head{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.head view text{
+  padding-left: 15rpx;
+}
+.head view:nth-of-type(1){
+  height: 80rpx;
+  width: 300rpx;
+  display: flex;
+  align-items: center;
+}
+.head view:nth-of-type(2){
+  height: 80rpx;
+  width: 150rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.head image{
+  height: 80rpx;
+  width: 80rpx;
+}
+
+.head2 image:first-child{
+  width:60rpx;
+  height: 60rpx;
+}
+.head2 image:nth-of-type(2){
+  width: 55rpx;
+  height: 55rpx;
+}
+
+.head3{
+  box-shadow: 5px 5px;
+  width: 200rpx;
+  background-color:rgb(250, 82, 82);
+  border-radius: 40rpx;
+}
+.head3 text{
+  font-size: 35rpx;
+
+}
+
+/*歌单区*/
+.playList{
+  width: 100%;
+  height: 100%;
+  border-radius: 25rpx;
+}
+.playList view{
+  left: 30rpx;
+  width: 100%;
+  height:120rpx;
+  padding-bottom: 30rpx;
+  
+}
+.playList image{
+  width:210rpx;
+  height:180rpx;
+  padding-bottom: 20rpx;
+  padding-right: 20rpx;
+  
+}
+.playList view navigator{
+  width:90%;
+  height:130rpx;
+  padding: 20rpx 20rpx;
+  top: 50rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.playList view navigator text{
+  top: 30rpx;
+  display: flex;
+  padding-bottom: 20rpx;
+}
+
+.playList view navigator text:nth-of-type(2){
+  font-size: 28rpx;
+}
+
+.navigator view text:last-child{
+  right: 100rpx;
+}

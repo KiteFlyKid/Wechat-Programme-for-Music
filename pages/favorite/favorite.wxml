@@ -1,0 +1,66 @@
+<view class="myMode {{skinStyle}}Mode">
+<view class="pageFavorite">
+<view>
+  <view class="a1">
+     <view></view>
+     <view>
+        <input placeholder = "搜索"  maxlength="15" bindinput="confirm"></input>
+     </view>
+     <view></view>
+  </view>
+</view>
+
+<view class="profile"> 
+  <view class = "listName">
+  <text>我喜欢的音乐</text>
+  <text>WaterFox</text>
+  </view>
+  <view>
+    <image src="{{latest.data.pic}}" class="cover"></image>
+    <image src="../../images/heart2.png" class="coverHeart"></image>
+  </view>
+</view>
+
+<view class="controller">
+  <image src="../../images/share1.png"></image>
+  <image src="../../images/stop.png"></image>
+  <image src="../../images/Arrow Left.png"></image>
+</view>
+
+<view class="peizi">
+  <text>分享</text>
+  <text>播放</text>
+  <text>下载</text>
+</view>
+
+
+<!--播放列表-->
+<view class="bofang">
+   <view class="titleWrap">
+      <text class="popular">热门评论</text>
+      <view2>
+         <text class="add">添加收藏</text>
+      </view2>
+   </view>
+   <view class="neirong">
+      <movable-area class="movable">
+         <movable-view direction="vertical" inertia="true" friction='20' >
+         <view2 >
+         <view class="blank"></view>
+         <view class="v3" bindtap = 'openPlay' data-id='{{index}}' wx:for='{{songList}}'>
+            <view4>
+               <text>{{index+1}}</text>
+            </view4>
+            <view3>
+               <text>{{item.data.name}}</text>
+               <text>{{item.data.singer}}</text>
+            </view3>
+            <image src="../../images/play2.png"></image>
+         </view>
+         </view2>
+         </movable-view>
+      </movable-area>
+   </view>
+</view>
+</view>
+</view>
